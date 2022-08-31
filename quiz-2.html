@@ -4,20 +4,31 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>사각형 너비 구하기</title>
+	<title>3의 배수 찾기</title>
+	<style>
+		body {
+			font-size:1.2em;
+			text-align:center;
+		}
+	</style>
 </head>
-<body>	
+<body>
+	<h2>3의 배수 찾기</h2>
+</body>
 
 	<script>
+		var count = 0;
 
-		var width = prompt("사각형의 가로 값: ");
-		var height = prompt("사각형의 세로 값: ");
-		var square = width * height;
+		for(i=1; i<=100; i++){
+			if(i % 3 == 0){
+				count++;
+				document.write(i + ", ");
 
-		alert("주어진 사각형의 너비: " + square);
-
-
+			}
+		}
+		document.write("<p>3의 배수의 갯수 : ", count + "</p>");
 	</script>
 
-</body>
+
+
 </html>
